@@ -5,7 +5,7 @@
   "main": "app.plugin.js",
   "repository": "git@github.com:eunsdev/push-up.git",
   "author": "Sangeun Lee <eunsdev@gmail.com> (https://github.com/eunsdev)",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/eunsdev/push-up#readme",
   "bugs": {
     "url": "https://github.com/eunsdev/push-up/issues"
