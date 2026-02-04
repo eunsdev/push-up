@@ -1,5 +1,5 @@
 {
-  "name": "push-up",
+  "name": "@eunsdev/push-up",
   "version": "0.1.1",
   "description": "A self-hosted react-native code push",
   "main": "app.plugin.js",
