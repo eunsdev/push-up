@@ -22,9 +22,23 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
 
+      - name: Get previous version
+        id: prev
+        run: |
+          echo "version=$(npm view push-up version)" >> $GITHUB_OUTPUT
+
       - uses: changesets/action@v1
         with:
           publish: yarn changeset publish
+          commit: "version bump"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Amend commit message with versions
+        run: |
+          NEW_VERSION=$(node -p "require('./package.json').version")
+          OLD_VERSION=${{ steps.prev.outputs.version }}
+          git commit --amend -m "bump version: ${OLD_VERSION} -> ${NEW_VERSION}"
+          git push --force
+    
