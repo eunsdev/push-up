@@ -1,0 +1,10 @@
+{
+  "name": "push-up",
+  "platforms": ["ios", "android"],
+  "ios": {
+    "modules": ["PushUpModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.pushup.PushUpModule"]
+  }
+}

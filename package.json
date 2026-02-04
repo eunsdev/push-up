@@ -1,0 +1,38 @@
+{
+  "name": "push-up",
+  "version": "0.1.1",
+  "description": "A self-hosted react-native code push",
+  "main": "app.plugin.js",
+  "repository": "git@github.com:eunsdev/push-up.git",
+  "author": "Sangeun Lee <eunsdev@gmail.com> (https://github.com/eunsdev)",
+  "license": "MIT",
+  "homepage": "https://github.com/eunsdev/push-up#readme",
+  "bugs": {
+    "url": "https://github.com/eunsdev/push-up/issues"
+  },
+  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "app.plugin.js",
+    "plugin/build"
+  ],
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "test": "expo-module test",
+    "lint": "expo-module lint",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "expo-module-scripts": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@expo/config-plugins": "^4.1.5"
+  }
+}

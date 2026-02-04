@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/android/withpushupmainapplication.ts","./src/android/withpushupupdatestringsxml.ts","./src/ios/appdelegate.ts","./src/ios/withpushupinfoplist.ts"],"version":"5.9.3"}
