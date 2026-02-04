@@ -40,5 +40,5 @@ jobs:
           NEW_VERSION=$(node -p "require('./package.json').version")
           OLD_VERSION=${{ steps.prev.outputs.version }}
           git commit --amend -m "bump version: ${OLD_VERSION} -> ${NEW_VERSION}"
-          git push --force
+          git push --force origin HEAD:main
     
